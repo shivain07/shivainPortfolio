@@ -1,0 +1,293 @@
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    /* background: #202731; */
+    background: #0f0f10;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+p {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* min-height: 400px; */
+    height: 400px;
+    padding-top: 100px;
+   
+}
+.blue {
+    background: #3c31dd;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.pink {
+    background: #ff0066;
+    overflow: hidden;
+}
+
+.dark {
+    background: #0f0f10;
+}
+
+
+.blob-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#connect{
+    font-size: 1.5rem;
+    padding: 4px;
+
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.wave1 .shape-fill {
+    fill: #0f0f10;
+    
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Blobs SVG background image via https://haikei.app/ */
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.blob-content {
+    z-index: 1;
+}
+
+.blobs {
+    width: 100%;
+    background: url('./blobs.svg') no-repeat bottom / cover;
+}
+
+.orangewave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.orangewave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
+}
+
+.orangewave2 .shape-fill {
+    /* fill: #202731; */
+    fill: #0f0f10;
+}
+
+.foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.foot svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.foot .shape-fill {
+    fill: #dd3f31;
+}
+#connect{
+    font-size: 1.3rem;
+    padding: 4px;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-div{
+   
+    position: relative;
+    margin: auto;
+    height: 65vh;
+    width: 80vw;
+    z-index: 1;
+}
+.chart-div canvas {
+    border: 1px dotted red;
+  }
+
+#particles-js {
+    background: #0f0f10;
+}
+.lightclr{
+    background: #2a2a2c;
+
+}
+
+/* media queries */
+
+@media only screen and (min-width: 445px) {
+   
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    #connect{
+        font-size: 1.6rem;
+        padding: 4px;
+    
+    }
+  }
+
+  @media only screen and (min-width:645px){
+
+
+    .orangewave2 svg {
+        
+        height: 140px;
+        
+    }
+    .wave1 svg{
+        height: 140px;
+    }
+    #connect{
+        font-size: 3rem;
+        padding: 4px;
+    
+    }
+  }
+
+  @media only screen and (min-width:648px){
+      h2{
+          font-size: 1.2rem;
+      }
+  }
+  @media only screen and (min-width:705px){
+
+
+    .orangewave2 svg {
+        
+        height: 150px;
+        
+    }
+    .wave1 svg{
+        height: 150px;
+    }
+    h1 {
+        font-size: 3.4rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (min-width:730px){
+    p {
+        font-size: 1.3rem;
+    }
+
+  }
+  @media only screen and (min-width:730px){
+  h2{
+    font-size: 1.4rem;
+}
+}
+
+
+@media only screen and (min-width: 1112px) {
+
+    h1 {
+        font-size: 3.7rem;
+    }
+    
+    p {
+        font-size: 1.4rem;
+    }
+  
+  }
+@media only screen and (min-width: 1120px) {
+   
+    h1 {
+        font-size: 4rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+  
+  }
